@@ -1,17 +1,26 @@
 <script setup>
-// Página de bienvenida inicial
+import { ref } from 'vue'
+import Romance from './components/Romance.vue'
+
+// Variable para controlar qué vista se muestra
+const mostrarCatalogo = ref(false)
 </script>
 
 <template>
-  <main class="welcome-container">
+  <!-- Vista de Bienvenida -->
+  <main v-if="!mostrarCatalogo" class="welcome-container">
     <h1>Bienvenidoss a CineBox</h1>
     <p class="subtitle">Tu plataforma de gestión y catálogo de películas.</p>
     
     <div class="card">
       <p>Próximamente aquí encontrarás los productos y catálogos disponibles.</p>
-      <button class="explore-btn">Explorar</button>
+      <!-- Al hacer clic, cambia la variable a true para mostrar el catálogo -->
+      <button class="explore-btn" @click="mostrarCatalogo = true">Explorar</button>
     </div>
   </main>
+
+  <!-- Vista del Catálogo de Romance -->
+  <Romance v-else />
 </template>
 
 <style scoped>
