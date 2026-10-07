@@ -1,7 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+import Terror from './components/Terror.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <Terror />
 </template>
