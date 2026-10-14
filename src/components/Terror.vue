@@ -97,6 +97,7 @@ function siguientePelicula() {
 }
 </script>
 <!-- Cambio local de Cristopher para la practica de force push -->
+ <!-- /* Cambio para practicar git push --force en rama individual */-->
 <style scoped>
 .contenedor {
   background-color: #111;
