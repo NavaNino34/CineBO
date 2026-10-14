@@ -96,7 +96,7 @@ function siguientePelicula() {
   indice.value = (indice.value + 1) % peliculas.length
 }
 </script>
-
+<!-- Cambio local de Cristopher para la practica de force push -->
 <style scoped>
 .contenedor {
   background-color: #111;
